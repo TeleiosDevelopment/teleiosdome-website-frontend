@@ -1,0 +1,73 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Simulator {
+  id         String    @id @default(cuid())
+  name       String
+  isActive   Boolean   @default(true) // Can be toggled off
+  statusNote String? // Optional reason (e.g., maintenance)
+  bookings   Booking[] @relation("BookingSimulators")
+}
+
+model Booking {
+  id            String       @id @default(cuid())
+  firstName     String
+  lastName      String
+  email         String
+  phone         String
+  date          String
+  time          String
+  seats         Int // Number of simulators required
+  price         Int          @default(0) // Total price = bookingType.price * seats
+  createdAt     DateTime     @default(now())
+  bookingTypeId String?
+  bookingType   BookingType? @relation(fields: [bookingTypeId], references: [id])
+  simulators    Simulator[]  @relation("BookingSimulators")
+}
+
+model BookingType {
+  id       String    @id @default(cuid())
+  name     String
+  duration Int
+  price    Int
+  bookings Booking[]
+}
+
+model User {
+  id        String   @id @default(cuid())
+  username  String
+  email     String   @unique
+  password  String
+  role      Role
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+enum Role {
+  ADMIN
+  RECEPTIONIST
+}
+
+model BusinessHour {
+  id        Int      @id @default(autoincrement())
+  day       String // e.g., "Monday"
+  openTime  String // e.g., "09:00"
+  closeTime String // e.g., "17:00"
+  updatedAt DateTime @updatedAt
+}
+
+model PlannedClosure {
+  id         Int      @id @default(autoincrement())
+  date       DateTime @unique
+  openTime   String? // e.g., "09:00", optional if isEvent is true
+  isEvent    Boolean  @default(false) // Indicates if it's an event-based closure
+  eventHours String? // Optional hours description, e.g., "14:00–18:00"
+  reason     String? // Optional reason for the closure
+  updatedAt  DateTime @updatedAt
+}

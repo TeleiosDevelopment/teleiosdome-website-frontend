@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  --font-orbitron: "Orbitron", sans-serif;
+  --font-jura: "Jura", sans-serif;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-orbitron), sans-serif;
+  }
+}
+
+:root {
+  --primary: #34105e;              /* Dark Purple - Modern, Techy, Premium, Trustworthy */
+  --secondary: #ff1c1d;            /* Racing Red - Energetic, Action, Excitement, CTAs */
+  --accent: #dcdce7;               /* Cool Gray - Clean, Backgrounds, Borders, Subtle UI elements */
+  --background-primary: #34105e;   /* Background Primary - Dark Purple */
+  --background-light: #f7f6fa;     /* Off white Lilac - For alternating sections */
+  --text-dark: #1f1f1f;            /* Charcoal - For body copy */
+  --text-light: #ffffff;           /* Pure White - For text on dark backgrounds */
+
+  /* Typography Reference: Orbitron (https://fonts.google.com/specimen/Orbitron) */
+  /* Headings: Orbitron SemiBold 600 */
+  /* Body Text: Orbitron Regular 400 */
+}
+
+
+@theme inline {
+  --color-background: var(--background-light);
+  --color-foreground: var(--text-dark);
+  --font-sans: 'Orbitron', 'Jura', sans-serif;
+  --font-mono: 'Orbitron', monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-primary: #34105e;       /* Dark Purple for dark mode */
+    --text-light: #ffffff;               /* Light text */
+  }
+}
+
+body {
+  background: var(--background-primary);
+  color: var(--text-light);
+  font-family: 'Orbitron', 'Jura', sans-serif;
+}
+/* Expand dropdown width & styling */
+.custom-phone-dropdown .country-list {
+  width: 100% !important;
+  max-height: 300px;
+  overflow-y: auto;
+  background-color: black;
+}
+
+/* Style each dropdown item */
+.custom-phone-dropdown .country-list .country {
+  color: white;
+  font-size: 1rem;
+}
+.custom-phone-dropdown .country-list .country:hover {
+  background-color: #d007a6;
+  color: white;
+}
+
+/* Override input button hover backgrounds */
+.phone-button:hover,
+.custom-phone-dropdown .country-list .country:hover {
+  background-color: #d007a6 !important;
+}

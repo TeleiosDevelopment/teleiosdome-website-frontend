@@ -1,0 +1,26 @@
+Index: app/(root)/booking/confirmation/ConfirmedMessage.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/(root)/booking/confirmation/ConfirmedMessage.tsx b/app/(root)/booking/confirmation/ConfirmedMessage.tsx
+--- a/app/(root)/booking/confirmation/ConfirmedMessage.tsx	
++++ b/app/(root)/booking/confirmation/ConfirmedMessage.tsx	
+@@ -22,7 +22,6 @@
+       hasAttemptedSaveRef.current = true;
+       try {
+         const { firstName, lastName, email, phone, date, time, seats, bookingTypeId } = bookingData as typeof bookingData & { bookingTypeId?: string };
+-        const price = bookingData.seats * (bookingData.price || 0);
+         const payload: {
+           firstName: string;
+           lastName: string;
+@@ -32,8 +31,7 @@
+           time: string;
+           seats: number;
+           bookingTypeId?: string;
+-          price: number;
+-        } = { firstName, lastName, email, phone, date, time, seats, price };
++        } = { firstName, lastName, email, phone, date, time, seats };
+ 
+         if (bookingTypeId) {
+           payload.bookingTypeId = bookingTypeId;

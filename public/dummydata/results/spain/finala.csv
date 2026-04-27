@@ -1,0 +1,18 @@
+pos,driver,team,bestLap,laps,gap,pts,fastestLap,penaltyDriver,penaltyReason,penaltyValue
+1,Essa A.H,Ferrari,1:13.317,15,-,79,Leonard F,,,
+2,Nick D,Aston Martin,1:13.058,15,+1.976,70,,,,
+3,Leonard F,Ferrari,1:12.772,15,+4.307,63+1,,,,
+4,Arthur D,McLaren,1:12.953,15,+7.943,56,,,,
+5,Andre F,Mercedes,1:14.191,15,+13.218,50,,,,
+6,Emile N,Ferrari,1:14.687,15,+18.393,45,,,,
+7,Simone S,Haas,1:14.019,15,+26.855,41,,,,
+8,Nathan P,Red Bull,1:13.043,15,+31.142,37,,,,
+9,Abdul Hadi,Red Bull,1:14.318,15,+37.443,33,,,,
+10,Zayed A,Mercedes,1:14.416,15,+51.013,30,,,,
+11,Leandro N,Ferrari,1:14.564,15,+51.940,27,,,,
+12,Louis R.H,Williams,1:14.647,15,+56.120,24,,,,
+13,Elina P,Mercedes,1:14.694,14,+1 Lap,21,,,,
+14,Guillaume H,Ferrari,1:14.712,14,+1 Lap,19,,,,
+15,Amaury D,McLaren,1:15.383,11,+4 Laps,11,,,,
+,,,,,,,,Leonard F,Contact,+5s
+,,,,,,,,Nathan P,Unsafe rejoin,+5s

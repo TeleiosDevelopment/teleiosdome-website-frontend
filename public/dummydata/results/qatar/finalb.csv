@@ -1,0 +1,18 @@
+pos,driver,team,bestLap,laps,gap,pts,fastestLap,penaltyDriver,penaltyReason,penaltyValue
+1,Layla S,Ferrari,1:13.456,15,-,77,Layla S,,,
+2,Adam R,Red Bull,1:13.244,15,+1.712,69,,,,
+3,Mina T,Mercedes,1:13.876,15,+4.981,62,,,,
+4,Jamal K,McLaren,1:14.010,15,+8.340,56,,,,
+5,Nadia F,Aston Martin,1:14.233,15,+10.903,51,,,,
+6,Hamza M,Haas,1:14.654,15,+15.276,46,,,,
+7,Alejandro D,Ferrari,1:14.371,15,+18.420,42,,,,
+8,Sarah J,Williams,1:14.758,15,+23.908,38,,,,
+9,Tobias H,Red Bull,1:15.012,15,+29.134,34,,,,
+10,Lucia V,Mercedes,1:15.387,15,+33.271,31,,,,
+11,Reem O,Aston Martin,1:15.692,15,+37.809,28,,,,
+12,Karim N,Haas,1:15.891,14,+1 Lap,25,,,,
+13,Mohammed Y,Ferrari,1:16.005,14,+1 Lap,22,,,,
+14,Huda G,Williams,1:16.422,13,+2 Laps,19,,,,
+15,Omar C,McLaren,1:16.819,12,+3 Laps,16,,,,
+,,,,,,,,Tobias H,Unsafe overtake,+5s
+,,,,,,,,Lucia V,Track limits,+3s

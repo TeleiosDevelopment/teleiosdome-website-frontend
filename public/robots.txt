@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://teleiosdome.com
+
+# Sitemaps
+Sitemap: https://teleiosdome.com/sitemap.xml

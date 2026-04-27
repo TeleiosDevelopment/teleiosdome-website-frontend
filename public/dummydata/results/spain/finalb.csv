@@ -1,0 +1,20 @@
+
+
+pos,driver,team,bestLap,laps,gap,pts,fastestLap,penaltyDriver,penaltyReason,penaltyValue
+1,Michael T,Red Bull,1:13.542,15,-,78,Michael T,,,
+2,Sophia M,McLaren,1:13.361,15,+1.388,70,,,,
+3,Daniel B,Ferrari,1:13.299,15,+3.146,63,,,,
+4,Rayan J,Mercedes,1:13.975,15,+7.408,57,,,,
+5,Oscar W,Haas,1:14.200,15,+9.023,52,,,,
+6,Liam K,Williams,1:14.087,15,+12.516,47,,,,
+7,Hassan F,Aston Martin,1:14.566,15,+16.772,43,,,,
+8,Noah L,Ferrari,1:14.443,15,+20.558,39,,,,
+9,Max R,Ferrari,1:14.580,15,+24.934,36,,,,
+10,Yara E,Mercedes,1:14.792,15,+28.700,32,,,,
+11,Elias S,McLaren,1:14.899,15,+32.433,29,,,,
+12,Tariq Z,Williams,1:15.004,15,+35.621,26,,,,
+13,Larissa G,Haas,1:15.315,15,+39.899,23,,,,
+14,Valentina R,Aston Martin,1:15.742,14,+1 Lap,20,,,,
+15,Kareem A,Red Bull,1:15.913,13,+2 Laps,16,,,,
+,,,,,,,,Sophia M,Track limits,+3s
+,,,,,,,,Kareem A,Unsafe rejoin,+5s
