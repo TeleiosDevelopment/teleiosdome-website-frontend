@@ -1,4 +1,4 @@
-import type {Metadata} from "next";
+import type { Metadata } from "next";
 import Hero from "@/app/components/ui/GlobalHero";
 import ShowcaseCarousel from "@/app/components/ui/ShowcaseCarousel";
 import Testimonial from "@/app/components/ui/TestimonialSection";
@@ -23,11 +23,11 @@ export const metadata: Metadata = {
     title: "Corporate Events & Private Group Bookings | Teleios Dome Dubai",
     description:
       "Host unforgettable corporate events, team building activities, or private parties at Teleios Dome Dubai. Unique sim racing experiences tailored for groups. Inquire today!",
-    url: "https://www.teleiosdome.com/corporate-groups",
+    url: "https://www.teleiosdome.ae/corporate-groups",
     siteName: "Teleios Dome",
     images: [
       {
-        url: "https://www.teleiosdome.com/corporate/corporate1.webp",
+        url: "https://www.teleiosdome.ae/corporate/corporate1.webp",
         width: 1200,
         height: 630,
         alt: "Corporate Events at Teleios Dome Dubai",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "Corporate Events & Private Group Bookings | Teleios Dome Dubai",
     description:
       "Host unforgettable corporate events, team building activities, or private parties at Teleios Dome Dubai. Unique sim racing experiences tailored for groups. Inquire today!",
-    images: ["https://www.teleiosdome.com/corporate/corporate1.webp"],
+    images: ["https://www.teleiosdome.ae/corporate/corporate1.webp"],
   },
 };
 
@@ -56,7 +56,7 @@ const facilitySlides = [
   {
     title: "Comfortable Lounge",
     description:
-        "Relax and recharge in our stylish lounge equipped with a full-service barista bar—perfect for socializing, watching the action, or hosting a casual toast.",
+      "Relax and recharge in our stylish lounge equipped with a full-service barista bar—perfect for socializing, watching the action, or hosting a casual toast.",
     imageSrc: "/corporate/gallery/3.webp",
   },
   {
@@ -105,9 +105,9 @@ export default function Page() {
         strokeTitle={false}
       />
       <GeneralCards
-          sectionTitle=" "
-          showPrice={false}
-          cards={eventCards}
+        sectionTitle=" "
+        showPrice={false}
+        cards={eventCards}
       />
 
       <ShowcaseCarousel

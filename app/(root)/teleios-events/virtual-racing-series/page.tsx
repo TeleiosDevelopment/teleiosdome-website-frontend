@@ -1,9 +1,9 @@
-import type {Metadata} from "next";
+import type { Metadata } from "next";
 import GlobalHero from "@/app/components/ui/GlobalHero";
 import Button from "@/app/components/ui/Button";
 import FaqSection from "@/app/components/ui/FAQSection";
 import IconGrid from "@/app/components/ui/IconGrid";
-import {faCalendarCheck, faCarSide, faClock, faTrophy} from "@fortawesome/free-solid-svg-icons";
+import { faCalendarCheck, faCarSide, faClock, faTrophy } from "@fortawesome/free-solid-svg-icons";
 import TextSquareImage from "@/app/components/ui/TextSquareImage";
 import RaceResults from "@/app/components/ui/ResultsSection";
 
@@ -20,11 +20,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Teleios Virtual RS Championship | Sim Racing League Dubai",
     description: "Join the Teleios Virtual RS Championship in Dubai! Compete in our exciting sim racing league, check standings, and register for upcoming races at Teleios Dome.",
-    url: "https://www.teleiosdome.com/teleios-events/virtual-racing-series",
+    url: "https://www.teleiosdome.ae/teleios-events/virtual-racing-series",
     siteName: "Teleios Dome",
     images: [
       {
-        url: "https://www.teleiosdome.com/images/home/hero_main.jpg",
+        url: "https://www.teleiosdome.ae/images/home/hero_main.jpg",
         width: 1200,
         height: 630,
         alt: "virtual gp - Teleios Dome",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Teleios Virtual RS Championship | Sim Racing League Dubai",
     description: "Join the Teleios Virtual GP Championship in Dubai! Compete in our exciting sim racing league, check standings, and register for upcoming races at Teleios Dome.",
-    images: ["https://www.teleiosdome.com/images/home/hero_main.jpg"],
+    images: ["https://www.teleiosdome.ae/images/home/hero_main.jpg"],
   },
 };
 
@@ -56,9 +56,9 @@ export default function Page() {
 
 
 
-                <RaceResults  />
+        <RaceResults />
 
-     </section>
+      </section>
 
       <IconGrid
         title="The 2025 Season 2 Virtual Racing Series"
@@ -94,9 +94,9 @@ export default function Page() {
             Ready to compete? Registration is easy.
           </p>
           <Button
-              href="https://wa.me/971504804408?text=I'm%20interested%20in%20registering%20for%20the%20VirtualRS"
-              text="Register for the Virtual RS Now!"
-              colored
+            href="https://wa.me/971504804408?text=I'm%20interested%20in%20registering%20for%20the%20VirtualRS"
+            text="Register for the Virtual RS Now!"
+            colored
           />
         </div>
       </section>

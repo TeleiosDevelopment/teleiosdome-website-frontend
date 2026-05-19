@@ -1,5 +1,5 @@
 import Standings from "@/app/components/ui/Standings";
-import type {Metadata} from "next";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Virtual Racing Series Standings | Teleios Dome",
@@ -19,11 +19,11 @@ export const metadata: Metadata = {
     title: "Virtual Racing Series Standings | Teleios Dome",
     description:
       "Check out the latest standings for the Teleios Dome Virtual Racing Series. Track your position, race results, and championship points in real time.",
-    url: "https://www.teleiosdome.com/standings",
+    url: "https://www.teleiosdome.ae/standings",
     siteName: "Teleios Dome",
     images: [
       {
-        url: "https://www.teleiosdome.com/images/events/leaderboard.jpg",
+        url: "https://www.teleiosdome.ae/images/events/leaderboard.jpg",
         width: 1200,
         height: 630,
         alt: "Virtual GP leaderboard - Teleios Dome",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: "Virtual Racing Series Standings | Teleios Dome",
     description:
       "Check out the latest standings for the Teleios Dome Virtual Racing Series. Track your position, race results, and championship points in real time.",
-    images: ["https://www.teleiosdome.com/images/events/leaderboard.jpg"],
+    images: ["https://www.teleiosdome.ae/images/events/leaderboard.jpg"],
   },
 };
 
@@ -66,7 +66,7 @@ const sampleDrivers = [
 export default function StandingsPage() {
   return (
     <main>
-      <Standings drivers={sampleDrivers}  nextRace="Canada - June 14th" />
+      <Standings drivers={sampleDrivers} nextRace="Canada - June 14th" />
     </main>
   );
 }

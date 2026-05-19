@@ -1,8 +1,8 @@
 // import CampSchedule from "@/app/components/ui/CampSchedule";
-import type {Metadata} from "next";
+import type { Metadata } from "next";
 import GlobalHero from "@/app/components/ui/GlobalHero";
 import IconGrid from "@/app/components/ui/IconGrid";
-import {faChalkboardTeacher, faFlagCheckered, faHelmetSafety, faMicrochip,} from "@fortawesome/free-solid-svg-icons";
+import { faChalkboardTeacher, faFlagCheckered, faHelmetSafety, faMicrochip, } from "@fortawesome/free-solid-svg-icons";
 import TextSquareImage from "@/app/components/ui/TextSquareImage";
 import FaqSection from "@/app/components/ui/FAQSection";
 import Testimonial from "@/app/components/ui/TestimonialSection";
@@ -23,11 +23,11 @@ export const metadata: Metadata = {
     title: "Kids Sim Racing Camps in Dubai | Teleios Dome Youth Programs",
     description:
       "Enroll your child in exciting and educational sim racing camps at Teleios Dome Dubai! Fun-filled programs for ages 10+ focusing on driving skills and motorsport basics.",
-    url: "https://www.teleiosdome.com/education/camps",
+    url: "https://www.teleiosdome.ae/education/camps",
     siteName: "Teleios Dome",
     images: [
       {
-        url: "https://www.teleiosdome.com/images/home/hero_main.jpg",
+        url: "https://www.teleiosdome.ae/images/home/hero_main.jpg",
         width: 1200,
         height: 630,
         alt: "Camps - Teleios Dome",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "Kids Sim Racing Camps in Dubai | Teleios Dome Youth Programs",
     description:
       "Enroll your child in exciting and educational sim racing camps at Teleios Dome Dubai! Fun-filled programs for ages 10+ focusing on driving skills and motorsport basics.",
-    images: ["https://www.teleiosdome.com/images/home/hero_main.jpg"],
+    images: ["https://www.teleiosdome.ae/images/home/hero_main.jpg"],
   },
 };
 // const dummyCampSessions = [
@@ -118,55 +118,55 @@ const faqs = [
 
 export default function Page() {
   return (
-      <>
+    <>
 
-        <GlobalHero
-            title="Teleios Dome Simracing Camps"
-            subtitle="Where Young Racers Learn & Play!"
-            imageSrc="/education/educationhero.webp"
-            height="third"
-            strokeTitle={false}
-            applyBlur={false}
+      <GlobalHero
+        title="Teleios Dome Simracing Camps"
+        subtitle="Where Young Racers Learn & Play!"
+        imageSrc="/education/educationhero.webp"
+        height="third"
+        strokeTitle={false}
+        applyBlur={false}
+      />
+
+      <section id="education-reasons" className="bg-[#0a0023]">
+        <IconGrid
+          items={curriculumItems}
+          title="Our Camp Curriculum"
+          subtitle="Our camp program is structured to be both engaging and informative, building a solid foundation for future racers"
         />
+      </section>
 
-        <section id="education-reasons" className="bg-[#0a0023]">
-          <IconGrid
-              items={curriculumItems}
-              title="Our Camp Curriculum"
-              subtitle="Our camp program is structured to be both engaging and informative, building a solid foundation for future racers"
-          />
-        </section>
+      <TextSquareImage
+        sectionTitle="Why Choose Our Camps?"
+        title="The Teleios Dome Camp Advantage"
+        description=""
+        bullets={[
+          "Expert Instructors: Passionate and experienced instructors with a knack for teaching kids.",
+          "Top-Tier Simulators: Safe, age-appropriate use of our professional-grade simulators.",
+          "Safe & Supervised: A secure and constantly supervised environment.",
+          "Small Group Sizes: Ensuring personalized attention for each camper.",
+          "Focus on Fun: Learning through engaging activities and positive reinforcement.",
+          "Certificate of Participation: A sense of achievement for every camper.",
+        ]}
+        imageSrc="/events/camp2.webp"
+      />
+      {/*<CampSchedule*/}
+      {/*  sectionTitle="Upcoming Camp Sessions & Enrollment"*/}
+      {/*  sessions={dummyCampSessions}*/}
+      {/*/>*/}
+      <Testimonial />
 
-        <TextSquareImage
-          sectionTitle="Why Choose Our Camps?"
-          title="The Teleios Dome Camp Advantage"
-          description=""
-          bullets={[
-            "Expert Instructors: Passionate and experienced instructors with a knack for teaching kids.",
-            "Top-Tier Simulators: Safe, age-appropriate use of our professional-grade simulators.",
-            "Safe & Supervised: A secure and constantly supervised environment.",
-            "Small Group Sizes: Ensuring personalized attention for each camper.",
-            "Focus on Fun: Learning through engaging activities and positive reinforcement.",
-            "Certificate of Participation: A sense of achievement for every camper.",
-          ]}
-          imageSrc="/events/camp2.webp"
-        />
-        {/*<CampSchedule*/}
-        {/*  sectionTitle="Upcoming Camp Sessions & Enrollment"*/}
-        {/*  sessions={dummyCampSessions}*/}
-        {/*/>*/}
-        <Testimonial />
+      <FaqSection
+        id="faqs"
+        subtitle="Camp - Frequently Asked Questions"
+        textColor="text-white"
+        faqs={faqs}
+      />
 
-        <FaqSection
-            id="faqs"
-            subtitle="Camp - Frequently Asked Questions"
-            textColor="text-white"
-            faqs={faqs}
-        />
+      <CampForm />
 
-        <CampForm />
-
-      </>
+    </>
 
 
   );

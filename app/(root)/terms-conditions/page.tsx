@@ -1,5 +1,5 @@
-import type {Metadata} from "next";
-import MainAccordion, {AccordionItem} from "@/app/components/ui/MainAccordion";
+import type { Metadata } from "next";
+import MainAccordion, { AccordionItem } from "@/app/components/ui/MainAccordion";
 import GlobalHero from "@/app/components/ui/GlobalHero";
 
 export const metadata: Metadata = {
@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Terms & Conditions | Teleios Dome Dubai",
     description: "Review the Terms & Conditions for using the Teleios Dome Dubai website and services, including booking policies and venue rules.",
-    url: "https://www.teleiosdome.com/terms-conditions",
+    url: "https://www.teleiosdome.ae/terms-conditions",
     siteName: "Teleios Dome",
     images: [
       {
-        url: "https://www.teleiosdome.com/images/home/hero_main.jpg",
+        url: "https://www.teleiosdome.ae/images/home/hero_main.jpg",
         width: 1200,
         height: 630,
         alt: "terms conditions - Teleios Dome",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Terms & Conditions | Teleios Dome Dubai",
     description: "Review the Terms & Conditions for using the Teleios Dome Dubai website and services, including booking policies and venue rules.",
-    images: ["https://www.teleiosdome.com/images/home/hero_main.jpg"],
+    images: ["https://www.teleiosdome.ae/images/home/hero_main.jpg"],
   },
 };
 
@@ -37,7 +37,7 @@ export default function Page() {
       content: (
         <>
           <p>
-             By accessing and using the website [teleiosdome.com] (the &#34;Site&#34;) and the services, experiences, events, and facilities offered by Teleios Dome Dubai, a business operating at [IMPZ D65, Dubai, UAE] (&#34;Teleios Dome&#34;, &#34;we&#34;, &#34;us&#34;, or &#34;our&#34;), you (&#34;User&#34;, &#34;you&#34;) agree to comply with and be bound by these Terms and Conditions (&#34;Terms&#34;) and our Privacy Policy [Link to Privacy Policy], which is incorporated herein by reference. If you do not agree to these Terms or the Privacy Policy, you must not use this Site or our Services.
+            By accessing and using the website [teleiosdome.ae] (the &#34;Site&#34;) and the services, experiences, events, and facilities offered by Teleios Dome Dubai, a business operating at [IMPZ D65, Dubai, UAE] (&#34;Teleios Dome&#34;, &#34;we&#34;, &#34;us&#34;, or &#34;our&#34;), you (&#34;User&#34;, &#34;you&#34;) agree to comply with and be bound by these Terms and Conditions (&#34;Terms&#34;) and our Privacy Policy [Link to Privacy Policy], which is incorporated herein by reference. If you do not agree to these Terms or the Privacy Policy, you must not use this Site or our Services.
           </p>
           <p>
             These Terms apply to all visitors, users, and others who access or use the Site or our Services. We reserve the right to update or modify these Terms at any time without prior notice. Your continued use of the Site or Services after any such changes constitutes your acceptance of the new Terms. We encourage you to review these Terms periodically.
@@ -106,7 +106,7 @@ export default function Page() {
       content: (
         <>
           <p>
-          All users, guests, and participants must adhere to the following rules of conduct while at Teleios Dome premises:
+            All users, guests, and participants must adhere to the following rules of conduct while at Teleios Dome premises:
           </p>
           <ul className="list-disc pl-5 space-y-1">
             <li>
@@ -150,7 +150,7 @@ export default function Page() {
       content: (
         <>
           <p>
-              All content present on the Site and within the Teleios Dome venue, including but not limited to text, graphics, logos, images, audio clips, video content, data compilations, software, simulator designs (where proprietary), brand names, and trademarks (collectively, &#34;Content&#34;), is the property of Teleios Dome or its content suppliers and is protected by UAE and international copyright, trademark, and other intellectual property laws. You may not copy, reproduce, republish, upload, post, transmit, distribute, or modify any Content in any way without prior written permission from Teleios Dome.
+            All content present on the Site and within the Teleios Dome venue, including but not limited to text, graphics, logos, images, audio clips, video content, data compilations, software, simulator designs (where proprietary), brand names, and trademarks (collectively, &#34;Content&#34;), is the property of Teleios Dome or its content suppliers and is protected by UAE and international copyright, trademark, and other intellectual property laws. You may not copy, reproduce, republish, upload, post, transmit, distribute, or modify any Content in any way without prior written permission from Teleios Dome.
           </p>
         </>
       ),
@@ -242,7 +242,7 @@ export default function Page() {
       content: (
         <>
           <p>
-     If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect. These Terms constitute the entire agreement between us regarding our Service and supersede and replace any prior agreements we might have had between us regarding the Service.
+            If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect. These Terms constitute the entire agreement between us regarding our Service and supersede and replace any prior agreements we might have had between us regarding the Service.
           </p>
         </>
       ),
@@ -252,7 +252,7 @@ export default function Page() {
       content: (
         <>
           <p>
-          No waiver by Teleios Dome of any term or condition set forth in these Terms shall be deemed a further or continuing waiver of such term or condition or a waiver of any other term or condition, and any failure of Teleios Dome to assert a right or provision under these Terms shall not constitute a waiver of such right or provision.
+            No waiver by Teleios Dome of any term or condition set forth in these Terms shall be deemed a further or continuing waiver of such term or condition or a waiver of any other term or condition, and any failure of Teleios Dome to assert a right or provision under these Terms shall not constitute a waiver of such right or provision.
           </p>
         </>
       ),
@@ -285,11 +285,11 @@ export default function Page() {
         blurIntensity="backdrop-blur-sm"
       />
       <MainAccordion
-          id="TermsConditions"
-          subtitle="Terms & Conditions"
-          items={accordionItems}
-          bgColor="bg-transparent"
-          textColor="text-white" sectionNumber={0}
+        id="TermsConditions"
+        subtitle="Terms & Conditions"
+        items={accordionItems}
+        bgColor="bg-transparent"
+        textColor="text-white" sectionNumber={0}
       />
     </main>
   );

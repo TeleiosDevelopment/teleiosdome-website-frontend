@@ -1,4 +1,4 @@
-import type {Metadata} from "next";
+import type { Metadata } from "next";
 import Hero from "@/app/components/ui/GlobalHero";
 import Cards from "@/app/components/ui/Cards";
 import TextSquareImage from "@/app/components/ui/TextSquareImage";
@@ -11,11 +11,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Sim Racing Experiences & Driver Coaching | Teleios Dome Dubai",
     description: "Book your unforgettable sim racing session at Teleios Dome Dubai! Choose from 20, 40, or 60-minute drives. Professional 1-to-1 driver coaching available to improve your lap times.",
-    url: "https://www.teleiosdome.com/experiences",
+    url: "https://www.teleiosdome.ae/experiences",
     siteName: "Teleios Dome",
     images: [
       {
-        url: "https://www.teleiosdome.com/images/home/hero_main.jpg",
+        url: "https://www.teleiosdome.ae/images/home/hero_main.jpg",
         width: 1200,
         height: 630,
         alt: "experiences - Teleios Dome",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Sim Racing Experiences & Driver Coaching | Teleios Dome Dubai",
     description: "Book your unforgettable sim racing session at Teleios Dome Dubai! Choose from 20, 40, or 60-minute drives. Professional 1-to-1 driver coaching available to improve your lap times.",
-    images: ["https://www.teleiosdome.com/images/home/hero_main.jpg"],
+    images: ["https://www.teleiosdome.ae/images/home/hero_main.jpg"],
   },
 };
 
@@ -62,14 +62,14 @@ export default function Page() {
 
     <div >
       <Hero
-          title="Experiences"
-          subtitle="Get Behind the Wheel: Race Experiences at Teleios Dome"
-          imageSrc="/events/eventmain2.webp"
-          textColor="white"
-          applyBlur={false}
-          height="third"
-          overlay="dark"
-          strokeTitle={false}
+        title="Experiences"
+        subtitle="Get Behind the Wheel: Race Experiences at Teleios Dome"
+        imageSrc="/events/eventmain2.webp"
+        textColor="white"
+        applyBlur={false}
+        height="third"
+        overlay="dark"
+        strokeTitle={false}
 
       />
 
@@ -86,7 +86,7 @@ export default function Page() {
         buttonHref="/education/driving-training"
         buttonText="Inquire About Coaching"
       />
-        <Journey/>
+      <Journey />
 
     </div>
   );

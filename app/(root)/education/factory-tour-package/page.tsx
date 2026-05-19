@@ -1,9 +1,9 @@
-import type {Metadata} from "next";
+import type { Metadata } from "next";
 import GlobalHero from "@/app/components/ui/GlobalHero";
 import TextSquareImage from "@/app/components/ui/TextSquareImage";
 import ShowcaseCarousel from "@/app/components/ui/ShowcaseCarousel";
 import IconGrid from "@/app/components/ui/IconGrid";
-import {faComments, faGamepad, faIndustry, faMugHot} from "@fortawesome/free-solid-svg-icons";
+import { faComments, faGamepad, faIndustry, faMugHot } from "@fortawesome/free-solid-svg-icons";
 import FaqSection from "@/app/components/ui/FAQSection";
 import Button from "@/app/components/ui/Button";
 import TourForm from "@/app/components/ui/forms/tourForm";
@@ -63,11 +63,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Simulator Factory Tour & Race Experience Dubai | Teleios Dome",
     description: "Go behind the scenes with Teleios Dome's exclusive simulator factory tour in Dubai, combined with a thrilling race experience. Book your unique tech tour today!",
-    url: "https://www.teleiosdome.com/education/factory-tour-package",
+    url: "https://www.teleiosdome.ae/education/factory-tour-package",
     siteName: "Teleios Dome",
     images: [
       {
-        url: "https://www.teleiosdome.com/images/home/hero_main.jpg",
+        url: "https://www.teleiosdome.ae/images/home/hero_main.jpg",
         width: 1200,
         height: 630,
         alt: "factory tour package - Teleios Dome",
@@ -80,7 +80,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Simulator Factory Tour & Race Experience Dubai | Teleios Dome",
     description: "Go behind the scenes with Teleios Dome's exclusive simulator factory tour in Dubai, combined with a thrilling race experience. Book your unique tech tour today!",
-    images: ["https://www.teleiosdome.com/images/home/hero_main.jpg"],
+    images: ["https://www.teleiosdome.ae/images/home/hero_main.jpg"],
   },
 };
 
@@ -127,8 +127,8 @@ export default function Page() {
 
 
       <ShowcaseCarousel
-          sectionTitle="Step Inside the Heart of Simulation Technology"
-          slides={facilitySlides}
+        sectionTitle="Step Inside the Heart of Simulation Technology"
+        slides={facilitySlides}
       />
 
 
@@ -177,7 +177,7 @@ export default function Page() {
         faqs={faqs}
       />
       <section id="form">
-      <TourForm />
+        <TourForm />
       </section>
 
     </>

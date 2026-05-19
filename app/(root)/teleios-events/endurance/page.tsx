@@ -1,7 +1,7 @@
-import type {Metadata} from "next";
+import type { Metadata } from "next";
 import GlobalHero from "@/app/components/ui/GlobalHero";
 import IconGrid from "@/app/components/ui/IconGrid";
-import {faCarSide, faClock, faExchangeAlt, faGasPump, faUsers} from "@fortawesome/free-solid-svg-icons";
+import { faCarSide, faClock, faExchangeAlt, faGasPump, faUsers } from "@fortawesome/free-solid-svg-icons";
 import UpcomingEvents from "@/app/components/ui/UpcomingEvents";
 import FaqSection from "@/app/components/ui/FAQSection";
 import Testimonial from "@/app/components/ui/TestimonialSection";
@@ -23,11 +23,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Teleios Endurance Sim Racing Series | Endurance Events Dubai",
     description: "Join the Teleios Endurance sim racing series in Dubai! Form a team and compete in challenging long-distance races requiring strategy, teamwork, and driver swaps at Teleios Dome.",
-    url: "https://www.teleiosdome.com/teleios-events/endurance",
+    url: "https://www.teleiosdome.ae/teleios-events/endurance",
     siteName: "Teleios Dome",
     images: [
       {
-        url: "https://www.teleiosdome.com/images/home/hero_main.jpg",
+        url: "https://www.teleiosdome.ae/images/home/hero_main.jpg",
         width: 1200,
         height: 630,
         alt: "endurance - Teleios Dome"
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Teleios Endurance Sim Racing Series | Endurance Events Dubai",
     description: "Join the Teleios Endurance sim racing series in Dubai! Form a team and compete in challenging long-distance races requiring strategy, teamwork, and driver swaps at Teleios Dome.",
-    images: ["https://www.teleiosdome.com/images/home/hero_main.jpg"]
+    images: ["https://www.teleiosdome.ae/images/home/hero_main.jpg"]
   }
 };
 
@@ -97,37 +97,37 @@ const faqs = [
 
 export default function Page() {
   return (
-   <>
-     <GlobalHero
-         title="Endurace Racing Series"
-         subtitle="Test Your Limits: Teleios Endurance Racing Series"
-         imageSrc="/corporate/DOME5.webp"
-         height="third"
-         strokeTitle={false}
-     />
+    <>
+      <GlobalHero
+        title="Endurace Racing Series"
+        subtitle="Test Your Limits: Teleios Endurance Racing Series"
+        imageSrc="/corporate/DOME5.webp"
+        height="third"
+        strokeTitle={false}
+      />
 
 
 
-     <IconGrid
-         title="Understanding the Endurance Challenge"
-         subtitle="Our endurance events are designed to replicate the strategic complexities and shared effort of real-world long-distance motorsport."
-         items={tourPackageItems}
-         showButton={false}
-     />
+      <IconGrid
+        title="Understanding the Endurance Challenge"
+        subtitle="Our endurance events are designed to replicate the strategic complexities and shared effort of real-world long-distance motorsport."
+        items={tourPackageItems}
+        showButton={false}
+      />
 
-     <section id="upcoming-events"  className="bg-[#0a0023]">
-       <UpcomingEvents />
-     </section>
+      <section id="upcoming-events" className="bg-[#0a0023]">
+        <UpcomingEvents />
+      </section>
 
-     <Testimonial />
+      <Testimonial />
 
-     <FaqSection
-         id="faqs"
-         subtitle="Endurance Racing - Frequently Asked Questions"
-         textColor="text-white"
-         faqs={faqs}
-     />
+      <FaqSection
+        id="faqs"
+        subtitle="Endurance Racing - Frequently Asked Questions"
+        textColor="text-white"
+        faqs={faqs}
+      />
 
-   </>
+    </>
   );
 }

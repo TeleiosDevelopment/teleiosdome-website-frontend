@@ -1,4 +1,4 @@
-import type {Metadata} from "next";
+import type { Metadata } from "next";
 import GlobalHero from "@/app/components/ui/GlobalHero";
 import Location from "@/app/components/ui/Location";
 import ShowcaseCarousel from "@/app/components/ui/ShowcaseCarousel";
@@ -24,11 +24,11 @@ export const metadata: Metadata = {
     title: "Discover Teleios Dome Dubai: Premier Sim Racing Venue & Facilities",
     description:
       "Explore Teleios Dome, Dubai's ultimate sim racing destination. Discover our advanced simulators, massive event screen, barista, meeting room, and vibrant atmosphere.",
-    url: "https://www.teleiosdome.com/the-venue",
+    url: "https://www.teleiosdome.ae/the-venue",
     siteName: "Teleios Dome",
     images: [
       {
-        url: "https://www.teleiosdome.com/images/home/hero_main.jpg",
+        url: "https://www.teleiosdome.ae/images/home/hero_main.jpg",
         width: 1200,
         height: 630,
         alt: "the venue - Teleios Dome",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: "Discover Teleios Dome Dubai: Premier Sim Racing Venue & Facilities",
     description:
       "Explore Teleios Dome, Dubai's ultimate sim racing destination. Discover our advanced simulators, massive event screen, barista, meeting room, and vibrant atmosphere.",
-    images: ["https://www.teleiosdome.com/images/home/hero_main.jpg"],
+    images: ["https://www.teleiosdome.ae/images/home/hero_main.jpg"],
   },
 };
 
@@ -56,7 +56,7 @@ const facilitySlides = [
   {
     title: "Comfortable Lounge",
     description:
-        "Relax and recharge in our stylish lounge equipped with a full-service barista bar—perfect for socializing, watching the action, or hosting a casual toast.",
+      "Relax and recharge in our stylish lounge equipped with a full-service barista bar—perfect for socializing, watching the action, or hosting a casual toast.",
     imageSrc: "/corporate/gallery/3.webp",
   },
   {
@@ -133,29 +133,29 @@ const faqs = [
 
 export default function Page() {
   return (
-   <>
-     <GlobalHero
-         title="The Venue"
-         subtitle="Discover Teleios Dome Dubai: Premier Sim Racing Venue & Facilities"
-         imageSrc="/corporate/DOME5.webp"
-         height="third"
-         strokeTitle={false}
-     />
-     <CardsHor
-         sectionTitle="Premium Facilities & Amenities"
-         cards={educationCards}
-     />
-     <ShowcaseCarousel
-         sectionTitle="Explore Teleios Dome: A Visual Tour"
-         slides={facilitySlides}
-     />
-     <Location />
-     <FaqSection
-         id="faqs"
-         subtitle="Visiting Teleios Dome - Frequently Asked Questions"
-         textColor="text-white"
-         faqs={faqs}
-     />
-   </>
+    <>
+      <GlobalHero
+        title="The Venue"
+        subtitle="Discover Teleios Dome Dubai: Premier Sim Racing Venue & Facilities"
+        imageSrc="/corporate/DOME5.webp"
+        height="third"
+        strokeTitle={false}
+      />
+      <CardsHor
+        sectionTitle="Premium Facilities & Amenities"
+        cards={educationCards}
+      />
+      <ShowcaseCarousel
+        sectionTitle="Explore Teleios Dome: A Visual Tour"
+        slides={facilitySlides}
+      />
+      <Location />
+      <FaqSection
+        id="faqs"
+        subtitle="Visiting Teleios Dome - Frequently Asked Questions"
+        textColor="text-white"
+        faqs={faqs}
+      />
+    </>
   );
 }

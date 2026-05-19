@@ -1,8 +1,8 @@
 import GlobalHero from "@/app/components/ui/GlobalHero";
 import CardsHor from "@/app/components/ui/CardsHor";
 import IconGrid from "@/app/components/ui/IconGrid";
-import {faChalkboardTeacher, faFlagCheckered, faHelmetSafety, faMicrochip} from "@fortawesome/free-solid-svg-icons";
-import type {Metadata} from "next";
+import { faChalkboardTeacher, faFlagCheckered, faHelmetSafety, faMicrochip } from "@fortawesome/free-solid-svg-icons";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Sim Racing Education & Training Programs in Dubai | Teleios Dome",
@@ -21,11 +21,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Sim Racing Education & Training Programs in Dubai | Teleios Dome",
     description: "Explore sim racing education at Teleios Dome Dubai. We offer kids' camps, unique simulator factory tours, and professional driver training to enhance your skills.",
-    url: "https://www.teleiosdome.com/education",
+    url: "https://www.teleiosdome.ae/education",
     siteName: "Teleios Dome",
     images: [
       {
-        url: "https://www.teleiosdome.com/images/home/hero_main.jpg",
+        url: "https://www.teleiosdome.ae/images/home/hero_main.jpg",
         width: 1200,
         height: 630,
         alt: "education - Teleios Dome",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Sim Racing Education & Training Programs in Dubai | Teleios Dome",
     description: "Explore sim racing education at Teleios Dome Dubai. We offer kids' camps, unique simulator factory tours, and professional driver training to enhance your skills.",
-    images: ["https://www.teleiosdome.com/images/home/hero_main.jpg"],
+    images: ["https://www.teleiosdome.ae/images/home/hero_main.jpg"],
   },
 };
 

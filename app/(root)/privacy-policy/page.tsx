@@ -1,6 +1,6 @@
-import type {Metadata} from "next";
+import type { Metadata } from "next";
 import GlobalHero from "@/app/components/ui/GlobalHero";
-import type {AccordionItem} from "@/app/components/ui/MainAccordion";
+import type { AccordionItem } from "@/app/components/ui/MainAccordion";
 import MainAccordion from "@/app/components/ui/MainAccordion";
 
 const accordionItems: AccordionItem[] = [
@@ -9,7 +9,7 @@ const accordionItems: AccordionItem[] = [
     content: (
       <>
         <p>
-          Welcome to Teleios Dome Dubai (&#34;Teleios Dome&#34;, &#34;we&#34;, &#34;us&#34;, or &#34;our&#34;). We are located at IMPZ D65, Dubai, UAE. We are committed to protecting the privacy and security of the personal information of our customers and website visitors (&#34;you&#34;). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website [teleiosdome.com] (the &#34;Site&#34;), use our services (including sim racing experiences, event bookings, championship participation, educational programs, and watch parties), or interact with us in any other way.
+          Welcome to Teleios Dome Dubai (&#34;Teleios Dome&#34;, &#34;we&#34;, &#34;us&#34;, or &#34;our&#34;). We are located at IMPZ D65, Dubai, UAE. We are committed to protecting the privacy and security of the personal information of our customers and website visitors (&#34;you&#34;). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website [teleiosdome.ae] (the &#34;Site&#34;), use our services (including sim racing experiences, event bookings, championship participation, educational programs, and watch parties), or interact with us in any other way.
         </p>
         <p>
           Please read this Privacy Policy carefully. By using our Site and Services, you signify your acceptance of this Privacy Policy. If you do not agree with the terms of this Privacy Policy, please do not access the Site or use our services.
@@ -168,9 +168,9 @@ const accordionItems: AccordionItem[] = [
       <>
         <p>If you have any questions, comments, or concerns about this Privacy Policy, our data practices, or if you wish to exercise your data protection rights, please contact us at:</p>
         <p>Teleios Dome Dubai<br />
-        IMPZ D65, Dubai, UAE<br />
-        Email: <a href="mailto:info@teleios.ae" className="underline text-white">info@teleios.ae</a><br />
-        Phone: <a href="tel:+971504804408" className="underline text-white">+971 50 480 4408</a></p>
+          IMPZ D65, Dubai, UAE<br />
+          Email: <a href="mailto:info@teleios.ae" className="underline text-white">info@teleios.ae</a><br />
+          Phone: <a href="tel:+971504804408" className="underline text-white">+971 50 480 4408</a></p>
         <p>We will endeavor to respond to your inquiry as soon as possible.</p>
       </>
     ),

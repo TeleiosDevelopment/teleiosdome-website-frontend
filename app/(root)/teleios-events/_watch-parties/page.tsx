@@ -1,4 +1,4 @@
-import type {Metadata} from "next";
+import type { Metadata } from "next";
 import GlobalHero from "@/app/components/ui/GlobalHero";
 import TextSquareImage from "@/app/components/ui/TextSquareImage";
 import FaqSection from "@/app/components/ui/FAQSection";
@@ -22,11 +22,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Motorsport Watch Parties in Dubai | Teleios Dome Big Screen Experience",
     description: "Experience live motorsport watch parties at Teleios Dome Dubai! Watch the race on our giant screen with amazing atmosphere, food, and fellow fans. Book your spot!",
-    url: "https://www.teleiosdome.com/teleios-events/watch-parties",
+    url: "https://www.teleiosdome.ae/teleios-events/watch-parties",
     siteName: "Teleios Dome",
     images: [
       {
-        url: "https://www.teleiosdome.com/images/home/hero_main.jpg",
+        url: "https://www.teleiosdome.ae/images/home/hero_main.jpg",
         width: 1200,
         height: 630,
         alt: "watch parties - Teleios Dome",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Motorsport Watch Parties in Dubai | Teleios Dome Big Screen Experience",
     description: "Experience live motorsport watch parties at Teleios Dome Dubai! Watch the race on our giant screen with amazing atmosphere, food, and fellow fans. Book your spot!",
-    images: ["https://www.teleiosdome.com/images/home/hero_main.jpg"],
+    images: ["https://www.teleiosdome.ae/images/home/hero_main.jpg"],
   },
 };
 
@@ -103,31 +103,31 @@ export default function Page() {
 
       />
 
-        <section id="upcoming-events"  className="bg-[#0a0023]">
-          
-            <UpcomingEvents />
-        </section>
+      <section id="upcoming-events" className="bg-[#0a0023]">
 
-        <section id="how-to-participate" className="text-white py-16 px-4">
-            <div className="container mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-4">How to Join the Race Day Crowd</h2>
+        <UpcomingEvents />
+      </section>
+
+      <section id="how-to-participate" className="text-white py-16 px-4">
+        <div className="container mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-4">How to Join the Race Day Crowd</h2>
           <p className="text-lg font-jura mb-8 max-w-2xl mx-auto">
             To ensure the best experience and secure your spot, booking is necessary.
           </p>
-            <Button
-              href="https://wa.me/971504804408?text=I'm%20interested%20in%20booking%20a%20spot%20for%20the%20Watch%20Party%20at%20Teleios%20Dome"
-              text="Book now!"
-              colored
-            />
+          <Button
+            href="https://wa.me/971504804408?text=I'm%20interested%20in%20booking%20a%20spot%20for%20the%20Watch%20Party%20at%20Teleios%20Dome"
+            text="Book now!"
+            colored
+          />
         </div>
       </section>
       <Testimonial />
 
       <FaqSection
-          id="faqs"
-          subtitle="Watch Party - Frequently Asked Questions"
-          textColor="text-white"
-          faqs={faqs}
+        id="faqs"
+        subtitle="Watch Party - Frequently Asked Questions"
+        textColor="text-white"
+        faqs={faqs}
       />
     </>
   );

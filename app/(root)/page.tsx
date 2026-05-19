@@ -1,5 +1,5 @@
 // Importing required components and icons for the homepage
-import type {Metadata} from "next";
+import type { Metadata } from "next";
 import Hero from "@/app/components/ui/GlobalHero";
 import Cards from "@/app/components/ui/Cards";
 import FaqSection from "@/app/components/ui/FAQSection";
@@ -10,7 +10,7 @@ import UpcomingEvents from "@/app/components/ui/UpcomingEvents";
 // import GradFeatured from "@/app/components/ui/GradFeatured";
 import TextSquareImage from "@/app/components/ui/TextSquareImage";
 // import ImageText from "@/app/components/ui/ImageText";
-import {faCar, faFlagCheckered, faMugHot, faUsers} from "@fortawesome/free-solid-svg-icons";
+import { faCar, faFlagCheckered, faMugHot, faUsers } from "@fortawesome/free-solid-svg-icons";
 
 // SEO metadata for the page
 export const metadata: Metadata = {
@@ -20,11 +20,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Teleios Dome Dubai | Ultimate Simracing Experience & Events Venue",
     description: "Experience the thrill of simracing at Teleios Dome, Dubai! State-of-the-art simulators, corporate events, F1 watch parties, championships. Book now!",
-    url: "https://www.teleiosdome.com/",
+    url: "https://www.teleiosdome.ae/",
     siteName: "Teleios Dome",
     images: [
       {
-        url: "https://www.teleiosdome.com/images/home/hero_main.jpg",
+        url: "https://www.teleiosdome.ae/images/home/hero_main.jpg",
         width: 1200,
         height: 630,
         alt: "Home - Teleios Dome",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Teleios Dome Dubai | Ultimate Simracing Experience & Events Venue",
     description: "Experience the thrill of simracing at Teleios Dome, Dubai! State-of-the-art simulators, corporate events, F1 watch parties, championships. Book now!",
-    images: ["https://www.teleiosdome.com/images/home/hero_main.jpg"],
+    images: ["https://www.teleiosdome.ae/images/home/hero_main.jpg"],
   },
 };
 
@@ -70,17 +70,17 @@ export default function Page() {
     {
       question: "Do I need any sim racing experience?",
       answer:
-          "Not at all! Our simulators cater to all levels, from complete beginners to seasoned pros. Our friendly staff will guide you through the basics to get you racing in no time.",
+        "Not at all! Our simulators cater to all levels, from complete beginners to seasoned pros. Our friendly staff will guide you through the basics to get you racing in no time.",
     },
     {
       question: "What is the minimum age to race?",
       answer:
-          "There is no minimum age requirement, but a minimum height of 110 cm is required to enjoy the experience. We also offer specialized Kids Camps for younger racers. Please check the Camps page for details.",
+        "There is no minimum age requirement, but a minimum height of 110 cm is required to enjoy the experience. We also offer specialized Kids Camps for younger racers. Please check the Camps page for details.",
     },
     {
       question: "Is booking in advance required?",
       answer:
-          "While walk-ins are welcome subject to availability, we highly recommend booking your session in advance, especially for groups and during peak hours, to guarantee your spot on the grid.",
+        "While walk-ins are welcome subject to availability, we highly recommend booking your session in advance, especially for groups and during peak hours, to guarantee your spot on the grid.",
     },
   ];
 
@@ -226,83 +226,83 @@ export default function Page() {
   // ];
 
   return (
-      <div className="relative w-full text-white">
-        {/* Hero Section with Video Background */}
-        <div className="w-full h-screen">
-          <Hero
-              title="Experience the Thrill of Simracing at Teleios Dome"
-              subtitle="Unleash your inner racer, host unforgettable events, and join the community."
-              videoSrc="/videodome.webm"
-              textColor="white"
-              applyBlur={false}
-              height="full"
-              showButton={true}
-              overlay="dark"
-          />
-        </div>
-
-        {/* Experience Options Section */}
-        <div className="w-full pt-0">
-          <Cards sectionTitle="Race Experiences" cards={experienceCards} />
-        </div>
-
-        {/* Corporate & Group Events Section */}
-
-        <TextSquareImage
-            sectionTitle="Private Events"
-            title="Corporate & Private Events"
-            description="Host unique team-building, private parties, or conferences. Customizable packages available for unforgettable events."
-            imageSrc="/education/corp10.webp"
-            buttonHref="/corporate-groups"
-            buttonText="Plan Your Event"
+    <div className="relative w-full text-white">
+      {/* Hero Section with Video Background */}
+      <div className="w-full h-screen">
+        <Hero
+          title="Experience the Thrill of Simracing at Teleios Dome"
+          subtitle="Unleash your inner racer, host unforgettable events, and join the community."
+          videoSrc="/videodome.webm"
+          textColor="white"
+          applyBlur={false}
+          height="full"
+          showButton={true}
+          overlay="dark"
         />
-
-
-        <TextSquareImage
-            sectionTitle="Our Events"
-            title="Teleios Events"
-            description="Compete in our Virtual Racing Series & Endurance championships or catch live F1 action at our electrifying Watch Parties."
-            imageSrc="/events/home-look.webp"
-            buttonHref="/teleios-events"
-            reverseLayout={true}
-            buttonText="See Upcoming Events"
-        />
-
-        <TextSquareImage
-            sectionTitle="Education & Trainings"
-            title="Learn, Improve & Explore"
-            description="Sharpen your skills with pro driver training, enroll in our youth camps, or take a unique behind-the-scenes simulator factory tour."
-            imageSrc="/education/education-home.webp"
-            buttonHref="/education"
-            buttonText="Explore Education"
-        />
-        {/* Education & Trainings Section */}
-        {/*<GradFeatured*/}
-        {/*    sectionTitle="Education & Trainings"*/}
-        {/*    title="Learn, Improve & Explore"*/}
-        {/*    description="Sharpen your skills with pro driver training, enroll in our youth camps, or take a unique behind-the-scenes simulator factory tour."*/}
-        {/*    buttonHref="/education"*/}
-        {/*    buttonText="Explore Education"*/}
-        {/*    imageSrc="/education/education1.webp"*/}
-        {/*    imageAlt="Coach instructing student in simulator"*/}
-        {/*/>*/}
-
-        {/* Why Choose Us Section with Icon Grid */}
-        <IconGrid title="Why Choose Us?" subtitle="Why Teleios Dome Stands Out" items={whyChooseUs} />
-
-        {/* Testimonial Section */}
-        <Testimonial />
-        {/* Upcoming Events Carousel Section */}
-        <UpcomingEvents  title="Upcoming Events" />
-        {/* FAQ Section */}
-        <FaqSection
-            id="faqs"
-            subtitle="FAQs"
-            textColor="text-white"
-            faqs={faqs}
-        />
-        {/* Location / Contact Information Section */}
-        <Location />
       </div>
+
+      {/* Experience Options Section */}
+      <div className="w-full pt-0">
+        <Cards sectionTitle="Race Experiences" cards={experienceCards} />
+      </div>
+
+      {/* Corporate & Group Events Section */}
+
+      <TextSquareImage
+        sectionTitle="Private Events"
+        title="Corporate & Private Events"
+        description="Host unique team-building, private parties, or conferences. Customizable packages available for unforgettable events."
+        imageSrc="/education/corp10.webp"
+        buttonHref="/corporate-groups"
+        buttonText="Plan Your Event"
+      />
+
+
+      <TextSquareImage
+        sectionTitle="Our Events"
+        title="Teleios Events"
+        description="Compete in our Virtual Racing Series & Endurance championships or catch live F1 action at our electrifying Watch Parties."
+        imageSrc="/events/home-look.webp"
+        buttonHref="/teleios-events"
+        reverseLayout={true}
+        buttonText="See Upcoming Events"
+      />
+
+      <TextSquareImage
+        sectionTitle="Education & Trainings"
+        title="Learn, Improve & Explore"
+        description="Sharpen your skills with pro driver training, enroll in our youth camps, or take a unique behind-the-scenes simulator factory tour."
+        imageSrc="/education/education-home.webp"
+        buttonHref="/education"
+        buttonText="Explore Education"
+      />
+      {/* Education & Trainings Section */}
+      {/*<GradFeatured*/}
+      {/*    sectionTitle="Education & Trainings"*/}
+      {/*    title="Learn, Improve & Explore"*/}
+      {/*    description="Sharpen your skills with pro driver training, enroll in our youth camps, or take a unique behind-the-scenes simulator factory tour."*/}
+      {/*    buttonHref="/education"*/}
+      {/*    buttonText="Explore Education"*/}
+      {/*    imageSrc="/education/education1.webp"*/}
+      {/*    imageAlt="Coach instructing student in simulator"*/}
+      {/*/>*/}
+
+      {/* Why Choose Us Section with Icon Grid */}
+      <IconGrid title="Why Choose Us?" subtitle="Why Teleios Dome Stands Out" items={whyChooseUs} />
+
+      {/* Testimonial Section */}
+      <Testimonial />
+      {/* Upcoming Events Carousel Section */}
+      <UpcomingEvents title="Upcoming Events" />
+      {/* FAQ Section */}
+      <FaqSection
+        id="faqs"
+        subtitle="FAQs"
+        textColor="text-white"
+        faqs={faqs}
+      />
+      {/* Location / Contact Information Section */}
+      <Location />
+    </div>
   );
 }

@@ -1,10 +1,10 @@
 "use client";
-import {useState} from "react";
+import { useState } from "react";
 import dynamic from "next/dynamic";
 import "react-phone-input-2/lib/style.css";
-import {FaEnvelope, FaMapMarkerAlt, FaPhoneAlt, FaWhatsapp} from "react-icons/fa";
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faFacebookF, faInstagram, faTiktok, faYoutube} from '@fortawesome/free-brands-svg-icons';
+import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faInstagram, faTiktok, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import Image from "next/image";
 import ThanksMessage from "./ThanksMessage";
 
@@ -238,7 +238,7 @@ export default function ContactSection() {
                 <FontAwesomeIcon icon={faYoutube} className="h-7 w-7 hover:text-[#ff0000]" />
               </a>
               <a
-                href="https://www.tiktok.com/@teleiosdome.com"
+                href="https://www.tiktok.com/@teleiosdome.ae"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Teleios Dome on TikTok"

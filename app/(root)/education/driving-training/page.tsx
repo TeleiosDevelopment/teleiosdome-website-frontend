@@ -1,4 +1,4 @@
-import type {Metadata} from "next";
+import type { Metadata } from "next";
 import GlobalHero from "@/app/components/ui/GlobalHero";
 // import Cards from "@/app/components/ui/Cards";
 import FaqSection from "@/app/components/ui/FAQSection";
@@ -25,11 +25,11 @@ export const metadata: Metadata = {
     title: "Professional Sim Racing Driver Training & Coaching Dubai | Teleios Dome",
     description:
       "Unlock your racing potential with professional driver training at Teleios Dome Dubai. Personalized 1-to-1 coaching from expert sim racing coaches to improve lap times and technique.",
-    url: "https://www.teleiosdome.com/education/driving-training",
+    url: "https://www.teleiosdome.ae/education/driving-training",
     siteName: "Teleios Dome",
     images: [
       {
-        url: "https://www.teleiosdome.com/images/home/hero_main.jpg",
+        url: "https://www.teleiosdome.ae/images/home/hero_main.jpg",
         width: 1200,
         height: 630,
         alt: "driving training - Teleios Dome",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "Professional Sim Racing Driver Training & Coaching Dubai | Teleios Dome",
     description:
       "Unlock your racing potential with professional driver training at Teleios Dome Dubai. Personalized 1-to-1 coaching from expert sim racing coaches to improve lap times and technique.",
-    images: ["https://www.teleiosdome.com/images/home/hero_main.jpg"],
+    images: ["https://www.teleiosdome.ae/images/home/hero_main.jpg"],
   },
 };
 //
@@ -102,75 +102,75 @@ const faqs = [
 
 export default function Page() {
   return (
-      <>
+    <>
       <section id="education-hero">
         <GlobalHero
-            title=" Professional Sim Racing Driver Training"
-            subtitle="Unlock Your Potential: Professional Simracing Training & Coaching at Teleios Dome"
-            imageSrc="/education/educationhero.webp"
-            height="third"
-            strokeTitle={false}
-            applyBlur={true}
+          title=" Professional Sim Racing Driver Training"
+          subtitle="Unlock Your Potential: Professional Simracing Training & Coaching at Teleios Dome"
+          imageSrc="/education/educationhero.webp"
+          height="third"
+          strokeTitle={false}
+          applyBlur={true}
         />
       </section>
 
 
 
-        {/*<div className="bg-[#0a0023] pt-12">*/}
-        {/*  <h2 className="text-4xl font-bold mb-4 text-center">Tailored Coaching for Every Driver</h2>*/}
-        {/*  <p className="text-center mb-12 max-w-3xl mx-auto">*/}
-        {/*    We offer a range of training options designed to suit different skill levels and objectives.*/}
-        {/*    All sessions are conducted 1-to-1 with a dedicated professional coach.*/}
-        {/*  </p>*/}
+      {/*<div className="bg-[#0a0023] pt-12">*/}
+      {/*  <h2 className="text-4xl font-bold mb-4 text-center">Tailored Coaching for Every Driver</h2>*/}
+      {/*  <p className="text-center mb-12 max-w-3xl mx-auto">*/}
+      {/*    We offer a range of training options designed to suit different skill levels and objectives.*/}
+      {/*    All sessions are conducted 1-to-1 with a dedicated professional coach.*/}
+      {/*  </p>*/}
 
-        {/*</div>*/}
+      {/*</div>*/}
 
 
 
-        <TextSquareImage
-            sectionTitle="The Training Experience / What to Expect Section"
-            title="Your Personalized Path to Improvement"
-            description="Our training sessions are intensive but rewarding:"
-            bullets={[
-              "Initial Assessment: We start by understanding your current skill level and goals.",
-              "Focused Drills: Targeted exercises on our simulators to work on specific techniques.",
-              "Live Feedback: Real-time guidance and instruction from your coach.",
-              "Data Review (for advanced): Analysis of telemetry to pinpoint improvement areas.",
-              "Actionable Takeaways: Clear advice and practice plans to continue your development.",
-            ]}
-            imageSrc="/experience/session_40m.webp"
-        />
+      <TextSquareImage
+        sectionTitle="The Training Experience / What to Expect Section"
+        title="Your Personalized Path to Improvement"
+        description="Our training sessions are intensive but rewarding:"
+        bullets={[
+          "Initial Assessment: We start by understanding your current skill level and goals.",
+          "Focused Drills: Targeted exercises on our simulators to work on specific techniques.",
+          "Live Feedback: Real-time guidance and instruction from your coach.",
+          "Data Review (for advanced): Analysis of telemetry to pinpoint improvement areas.",
+          "Actionable Takeaways: Clear advice and practice plans to continue your development.",
+        ]}
+        imageSrc="/experience/session_40m.webp"
+      />
 
-        <section id="booking-training" className="bg-transparent text-white py-16 px-4">
-          <div className="container mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-4">Ready to Improve Your Lap Times?</h2>
-            <p className="text-lg font-jura mb-4 max-w-2xl mx-auto">
-              Investing in professional coaching is the fastest way to unlock your sim racing potential. Choose a program that suits you or contact us for a personalized consultation.
-            </p>
-            <div className="flex justify-center gap-6 flex-wrap">
-              <Button
-                href="#form"
-                text="Book a Training Session Now"
-                colored={true}
-                small={false}
-              />
-            </div>
+      <section id="booking-training" className="bg-transparent text-white py-16 px-4">
+        <div className="container mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-4">Ready to Improve Your Lap Times?</h2>
+          <p className="text-lg font-jura mb-4 max-w-2xl mx-auto">
+            Investing in professional coaching is the fastest way to unlock your sim racing potential. Choose a program that suits you or contact us for a personalized consultation.
+          </p>
+          <div className="flex justify-center gap-6 flex-wrap">
+            <Button
+              href="#form"
+              text="Book a Training Session Now"
+              colored={true}
+              small={false}
+            />
           </div>
-        </section>
+        </div>
+      </section>
 
 
-        <Testimonial />
+      <Testimonial />
 
 
-        <FaqSection
-            id="faqs"
-            subtitle="Camp - Frequently Asked Questions"
-            textColor="text-white"
-            faqs={faqs}
-        />
-        <section id="form">
-        <CoachForm/>
-        </section>
+      <FaqSection
+        id="faqs"
+        subtitle="Camp - Frequently Asked Questions"
+        textColor="text-white"
+        faqs={faqs}
+      />
+      <section id="form">
+        <CoachForm />
+      </section>
 
     </>
   );

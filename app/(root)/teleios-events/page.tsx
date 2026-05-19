@@ -1,4 +1,4 @@
-import type {Metadata} from "next";
+import type { Metadata } from "next";
 import GlobalHero from "@/app/components/ui/GlobalHero";
 import GeneralCards from "@/app/components/ui/GeneralCards2";
 import UpcomingEvents from "@/app/components/ui/UpcomingEvents";
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Teleios Events: Sim Racing Championships & F1 Watch Parties in Dubai",
   description: "Join the action at Teleios Dome! Compete in our Virtual RS and Endurance sim racing championships, or experience motorsports watch parties on our giant screen in Dubai.",
   keywords: [
-      "Simracing events Dubai",
+    "Simracing events Dubai",
     "Teleios Events",
     "virtual racing championship Dubai",
     "endurance sim racing Dubai",
@@ -22,11 +22,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Teleios Events: Sim Racing Championships & Watch Parties in Dubai",
     description: "Join the action at Teleios Dome! Compete in our Virtual GP and Endurance sim racing championships, or experience Motorsports watch parties on our giant screen in Dubai.",
-    url: "https://www.teleiosdome.com/teleios-events",
+    url: "https://www.teleiosdome.ae/teleios-events",
     siteName: "Teleios Dome",
     images: [
       {
-        url: "https://www.teleiosdome.com/images/home/hero_main.jpg",
+        url: "https://www.teleiosdome.ae/images/home/hero_main.jpg",
         width: 1200,
         height: 630,
         alt: "teleios events - Teleios Dome",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Teleios Events: Sim Racing Championships & Motorsports Watch Parties in Dubai",
     description: "Join the action at Teleios Dome! Compete in our Virtual GP and Endurance sim racing championships, or experience Motorsports watch parties on our giant screen in Dubai.",
-    images: ["https://www.teleiosdome.com/images/home/hero_main.jpg"],
+    images: ["https://www.teleiosdome.ae/images/home/hero_main.jpg"],
   },
 };
 
@@ -110,7 +110,7 @@ export default function Page() {
     <>
       <section id="hero">
         <GlobalHero
-            title="Teleios Events"
+          title="Teleios Events"
           subtitle="Teleios Events: Experience the Pinnacle of Simracing Competition & Spectacle"
           imageSrc="/events/home-look.webp"
           textColor="white"
@@ -143,7 +143,7 @@ export default function Page() {
 
       </section>
 
-      <section id="upcoming-events"  className="bg-[#0a0023]">
+      <section id="upcoming-events" className="bg-[#0a0023]">
         <UpcomingEvents />
       </section>
 

@@ -1,4 +1,4 @@
-import type {Metadata} from "next";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Page Not Found | Teleios Dome Dubai",
@@ -7,11 +7,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Page Not Found | Teleios Dome Dubai",
     description: "The page you are looking for does not exist. Return to Teleios Dome Dubai homepage.",
-    url: "https://www.teleiosdome.com/404",
+    url: "https://www.teleiosdome.ae/404",
     siteName: "Teleios Dome",
     images: [
       {
-        url: "https://www.teleiosdome.com/images/home/hero_main.jpg",
+        url: "https://www.teleiosdome.ae/images/home/hero_main.jpg",
         width: 1200,
         height: 630,
         alt: "404 - Teleios Dome",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Page Not Found | Teleios Dome Dubai",
     description: "The page you are looking for does not exist. Return to Teleios Dome Dubai homepage.",
-    images: ["https://www.teleiosdome.com/images/home/hero_main.jpg"],
+    images: ["https://www.teleiosdome.ae/images/home/hero_main.jpg"],
   },
 };
 

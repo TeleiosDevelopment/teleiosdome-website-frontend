@@ -2,7 +2,6 @@
 module.exports = {
   trailingSlash: true,
   images: {
-      domains: ['www.teleiosdome.com', 'teleiosdome.com'],
+      domains: ['www.teleiosdome.ae', 'teleiosdome.ae'],
   },
 }
-

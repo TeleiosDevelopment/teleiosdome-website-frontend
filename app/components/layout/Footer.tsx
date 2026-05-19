@@ -4,8 +4,8 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import SlidingText from "@/app/components/ui/SlidingText";
-import {faFacebookF, faInstagram, faTiktok, faYoutube,} from "@fortawesome/free-brands-svg-icons";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import { faFacebookF, faInstagram, faTiktok, faYoutube, } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -16,7 +16,7 @@ export default function Footer() {
         {/* Brand and Description */}
         <div className="space-y-4">
           <Image src="/logo-dome.png" alt="Teleios Dome" width={120}
-                 height={60} />
+            height={60} />
           <p className="font-jura">
             Experience the thrill of speed at Teleios Dome, offering dynamic group races and exclusive VIP experiences.
           </p>
@@ -46,7 +46,7 @@ export default function Footer() {
               <FontAwesomeIcon icon={faYoutube} className="h-5 w-5 hover:text-[#ff0000]" />
             </a>
             <a
-              href="https://www.tiktok.com/@teleiosdome.com"
+              href="https://www.tiktok.com/@teleiosdome.ae"
               target="_blank"
               rel="noreferrer"
               aria-label="Teleios Dome on TikTok"
@@ -113,7 +113,7 @@ export default function Footer() {
           <Link href="/terms-conditions" className="hover:underline">Terms & Conditions</Link>
         </div>
       </div>
-      <SlidingText text="Experience the thrill of speed at Teleios Dome, offering dynamic group races and exclusive VIP experiences." textSize="text-8xl" strokeColor = "#FFFF" />
+      <SlidingText text="Experience the thrill of speed at Teleios Dome, offering dynamic group races and exclusive VIP experiences." textSize="text-8xl" strokeColor="#FFFF" />
     </footer>
   );
 }
